@@ -1,0 +1,10 @@
+apiVersion: apps.dj-appserver.com/v1beta1
+kind: DJAppServer
+metadata:
+  name: djappserver-sample-01
+  namespace: default
+spec:
+  image: nginx:latest
+  containerPort: 80
+  replicas: 3
+  servicePort: 80

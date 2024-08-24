@@ -1,0 +1,12 @@
+apiVersion: apps.dj-appserver.com/v1beta1
+kind: DJAppServer
+metadata:
+  name: djappserver-sample-02
+  namespace: fg
+spec:
+  image: nginx:latest
+  containerPort: 80
+  replicas: 2
+  servicePort: 80
+
+

@@ -1,0 +1,16 @@
+domain: dj-appserver.com
+layout:
+- go.kubebuilder.io/v3
+projectName: op-operator-appserver
+repo: github.com/example/k8s-operator-dj-appserver
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: dj-appserver.com
+  group: apps
+  kind: DJAppServer
+  path: github.com/example/k8s-operator-dj-appserver/api/v1beta1
+  version: v1beta1
+version: "3"
