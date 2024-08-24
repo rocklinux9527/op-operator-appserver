@@ -38,6 +38,9 @@ make docker-build docker-push IMG=<some-registry>/op-operator-appserver:tag
 
 ```sh
 make deploy IMG=<some-registry>/op-operator-appserver:tag
+
+make deploy IMG='breaklinux/appserver-operator:v0.0.1' #已经制作好的好的镜像
+
 ```
 
 ### Uninstall CRDs
